@@ -1,0 +1,364 @@
+html, body{
+    font-family: 'Times New Roman', 'Microsoft Sans Serif', 'serif';
+    width: 100%;
+    height: 100%;
+}
+.nav-top{
+    height: 10%
+}
+.navbar-brand{
+    color: white !important;
+}
+.navbar{
+    border-radius: 0px;
+}
+.bg-light{
+    background-color: #1976D2 !important;
+}
+.content{
+    /*position: relative;*/
+    width: 100%;
+    height: 89%;
+}
+.border{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #1976D2 !important;
+}
+.left_side{
+    position: fixed;
+    width: 15%;
+    height: 89%;
+    float: left;
+}
+.left_side .btns{
+    border-top: 1px solid #1976D2;
+}
+.left_side .btn-default{
+    border-color: #1976D2;
+    color: #1976D2;
+    font-size: 16px;
+    padding: 5px 8px;
+}
+.btn-default:focus,
+.btn-default.focus {
+    color: white;
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+.btn-default:hover {
+    color: white;
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: white;
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+.main{
+    position: fixed;
+    height: 89%;
+    width: 63%;
+    margin-left: 16%;
+    float: left;
+}
+.right_side{
+    position: fixed;
+    height: 89%;
+    width: 20%;
+    margin-left: 80%;
+    float: left;
+}
+.info_panel{
+    /*margin-bottom: 50%;*/
+}
+.msg_prompt{
+    border: 2px solid #d43f3a;
+    border-radius: 10px 0 0 10px;
+    height: 30px;
+    width: 230px;
+    margin-left: 71.2%;
+    margin-top: 59%;
+    cursor:pointer;
+    display: none;
+}
+.msg_prompt .glyphicon-alert{
+    color: #d43f3a
+}
+.warning{
+    height: 160px;
+}
+.warning_alert{
+    float: left;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.warning_num{
+    float: left;
+    margin-top: 1.7%;
+    font-size: 16px;
+    color: #d43f3a;
+}
+.warn_cnt{
+    height: 112px;
+    overflow: scroll;
+    font-size: 14px;
+    color: #424242;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.clear{
+    clear: both;
+}
+.guide{
+    background-color: #1976D2;
+    width: 100%;
+    height: 6%;
+    border-radius: 10px 10px 0 0;
+}
+.guide-text{
+    float: left;
+    padding-left: 5%;
+    padding-top: 3%;
+    font-size: 18px;
+    color: white;
+}
+.guide-close{
+    float: left;
+    padding-left: 60%;
+    padding-top: 5%;
+    color: white;
+    cursor: pointer;
+}
+.main .nav{
+    padding-left: 1%;
+}
+.nav-pills > li > a{
+    font-size: 18px;
+    border-radius: 0;
+    padding: 5px 15px 0 15px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    background-color: white;
+    border-bottom: 2px solid #337ab7;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: white;
+    border-bottom: 2px solid #337ab7;
+}
+.nav > li > a.active{
+    color: #337ab7;
+    border-bottom: 2px solid #337ab7;
+}
+.info_panel .cnt{
+    font-size: 16px;
+    color: #424242;
+    height: 200px;
+    overflow: scroll;
+}
+.table > tbody > tr > td{
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.table > tbody > tr + td{
+    width: 30%;
+}
+
+/*Tree style begins*/
+#show_tree{
+    font-size: 16px;
+    color: #424242;
+    height: 84%;
+    margin-left: 2%;
+    margin-top: 4%;
+    overflow: scroll;
+}
+ul.tree, ul.tree * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 3px 0;
+}
+ul.tree img.arrow {
+    padding: 2px 0 0 0;
+    border: 0;
+    width: 20px;
+}
+/*ul.tree li {*/
+    /*padding: 4px 0 0 0;*/
+/*}*/
+ul.tree li ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+ul.tree label {
+    cursor: pointer;
+    font-weight: normal;
+    color: #424242;
+    /*padding: 2px 0;*/
+}
+ul.tree label.hover {
+    color: #1976D2;
+}
+/*p {*/
+    /*margin: 5px 15px;*/
+/*}*/
+/*ul {*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+/*}*/
+ul.tree li .arrow {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 1px 0 0 0;
+    cursor: pointer;
+    float: left;
+    background: transparent no-repeat;
+}
+ul.tree li .collapsed {
+    background-image: url(../imgs/collapse.png);
+    background-position: 5px 1px;
+    background-size: 8px;
+}
+ul.tree li .expanded {
+    background-image: url(../imgs/expand.png);
+    background-position: 0 4px;
+    background-size: 14px;
+}
+
+ul.tree li .checkbox {
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    background: url(../imgs/unchecked.jpg) no-repeat -7px -4px;
+    background-size: 30px;
+}
+ul.tree li .checked {
+    background-image: url(../imgs/checked.jpg);
+}
+ul.tree li .half_checked {
+    background-image: url(../imgs/half-checked.jpg);
+}
+/*tree style ends*/
+
+#show_tree .glyphicon{
+    font-size: 10px;
+    color: #9E9E9E;
+    padding-left: 5px;
+
+}
+.Dtable{
+    margin-left: 3%;
+    width: 94%;
+    overflow: scroll;
+}
+.Etable{
+    color: #424242;
+    float: left;
+}
+.Itable{
+    float: left;
+    color: #424242;
+}
+.panel-heading{
+    font-size: 16px;
+    font-weight: bold;
+}
+.table{
+    font-size: 14px;
+}
+td, th{
+    padding: 5px;
+    border-bottom: 1px solid #ddd
+}
+.show_area{
+    height: 60%;
+    overflow: scroll;
+}
+
+/* domain tree and info tree begin*/
+.info_panel .cnt{
+    font-size: 14px;
+    color: #424242;
+    height: 200px;
+    margin-left: 2%;
+    margin-top: 4%;
+    overflow: scroll;
+}
+.domain-panel .cnt{
+    font-size: 14px;
+    color: #424242;
+    height: 250px;
+    margin-left: 2%;
+    margin-top: 4%;
+    overflow: scroll;
+}
+ul.mtree, ul.mtree * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 2px 0;
+}
+ul.mtree img.arrow {
+    padding: 2px 0 0 0;
+    border: 0;
+    width: 20px;
+}
+ul.mtree li ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+ul.mtree label {
+    font-weight: normal;
+    color: #424242;
+}
+ul.mtree li .arrow {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 4px 0 0 0;
+    cursor: pointer;
+    float: left;
+    background: transparent no-repeat;
+}
+ul.mtree li .collapsed {
+    background-image: url(../imgs/collapse.png);
+    background-position: 5px 1px;
+    background-size: 8px;
+}
+ul.mtree li .expanded {
+    background-image: url(../imgs/expand.png);
+    background-position: 0 4px;
+    background-size: 14px;
+}
+/* domain tree and info tree end */
+.Dgraph{
+    width: 100%;
+    height: 100%
+}
+.legend{
+    float: left;
+    width: 100%;
+    height: 20px;
+    margin-left: 2%;
+    background: url(../imgs/legend.jpg) no-repeat 5px 0px;
+    background-size: 600px;
+}
+.hidee{
+    display: none;
+}
+.Dgraph_show{
+    float: left;
+    height: 305px;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisResult>
+    <privilegeEscalationInstances>
+        <privilegeEscalationInstance>
+            <malApp>edu.uci.seal.fungame</malApp>
+            <malComp>LevelUp</malComp>
+            <malCompId>103</malCompId>
+            <malCompDsmIdx>0</malCompDsmIdx>
+            <vulApp>edu.uci.seal.messaging</vulApp>
+            <vulComp>Sender</vulComp>
+            <vulCompId>102</vulCompId>
+            <vulCompDsmIdx>4</vulCompDsmIdx>
+            <resourceDsmIdx>6</resourceDsmIdx>
+            <resource>SMS</resource>
+        </privilegeEscalationInstance>
+    </privilegeEscalationInstances>
+    <intentSpoofingInstances/>
+    <unauthorizedIntentReceiptInstances/>
+</analysisResult>
